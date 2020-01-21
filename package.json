@@ -1,0 +1,41 @@
+{
+  "name": "@nx/basic-auth-middleware",
+  "version": "1.0.0",
+  "description": "A configurable Basic Authentication Middleware for Express",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": ["express", "basic", "auth", "authentication", "middleware"],
+  "author": "Nexum AG",
+  "license": "ISC",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config jestconfig.json",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeykom/basic-auth-middleware.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jeykom/basic-auth-middleware/issues"
+  },
+  "homepage": "https://github.com/Jeykom/basic-auth-middleware#readme",
+  "devDependencies": {
+    "@types/jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^24.3.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5"
+  }
+}
