@@ -1,14 +1,20 @@
 {
   "name": "@nx/basic-auth-middleware",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A configurable Basic Authentication Middleware for Express",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "keywords": ["express", "basic", "auth", "authentication", "middleware"],
+  "keywords": [
+    "express",
+    "basic",
+    "auth",
+    "authentication",
+    "middleware"
+  ],
   "author": "Nexum AG",
   "license": "ISC",
   "files": [
-    "lib/**/*"
+    "dist/**/*"
   ],
   "scripts": {
     "build": "tsc",
@@ -23,14 +29,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jeykom/basic-auth-middleware.git"
+    "url": "git+https://github.com/nexumAG/basic-auth-middleware.git"
   },
   "bugs": {
-    "url": "https://github.com/Jeykom/basic-auth-middleware/issues"
+    "url": "https://github.com/nexumAG/basic-auth-middleware/issues"
   },
-  "homepage": "https://github.com/Jeykom/basic-auth-middleware#readme",
+  "homepage": "https://github.com/nexumAG/basic-auth-middleware#readme",
   "devDependencies": {
+    "@types/express": "^4.17.2",
     "@types/jest": "^24.9.0",
+    "@types/node": "^13.1.8",
     "jest": "^24.9.0",
     "prettier": "^1.19.1",
     "ts-jest": "^24.3.0",

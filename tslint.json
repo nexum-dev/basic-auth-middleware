@@ -1,3 +1,8 @@
 {
-   "extends": ["tslint:recommended", "tslint-config-prettier"]
+   "extends": ["tslint:recommended", "tslint-config-prettier"],
+   "rules": {
+      "semicolon": [true, "never"],
+      "no-bitwise": false,
+      "ordered-imports": false,
+   }
 }
