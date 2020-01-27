@@ -31,4 +31,4 @@ app.listen(3000, () => console.log('Listening to 3000'));
 |ipAddressWhitelist|string[]|disable basic auth for this ips|['127.0.0.1', '192.168.0.2']
 |ipRangeWhitelist|string[]|disable basic auth for all ip addresses in the range|['10.10.0.0/16', '192.168.1.1/24']
 |hostsWhitelist|string[]|disable basic auth for this hosts|['localhost:3000', '127.0.0.1']
-|specificHostAuth|string[]|change username and password for the specific hosts|{'google.de': { username: 'test', password: 'test' } }
+|specificHostAuth|{[key: string]: {username: string, password: string}}|change username and password for the specific hosts|{'google.de': { username: 'test', password: 'test' } }
