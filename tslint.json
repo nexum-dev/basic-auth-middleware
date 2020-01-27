@@ -3,6 +3,6 @@
    "rules": {
       "semicolon": [true, "never"],
       "no-bitwise": false,
-      "ordered-imports": false,
+      "ordered-imports": false
    }
 }
