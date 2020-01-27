@@ -3,9 +3,9 @@ A middleware for express to configure a basic authentication.
 
 Features:
 - Basic Auth with Username, Password
-- Whitelist for Hosts (optional)
-- Whitelist for IP-addresses (optional)
-- Whitelist for IP-ranges(optional)
+- Whitelist for Hosts
+- Whitelist for IP-addresses
+- Whitelist for IP-ranges
 - specified authentication for other hosts
 
 ## Installation
