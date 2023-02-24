@@ -9,12 +9,12 @@ Features:
 - specified authentication for other hosts
 
 ## Installation
-npm -i -S @nx/basic-auth-middleware
+npm -i -S @nexum-ag/basic-auth-middleware
 
 ## Simple Example
 ```
 const express = require('express');
-const basicAuthMiddleware = require('@nx/basic-auth-middleware');
+const basicAuthMiddleware = require('@nexum-ag/basic-auth-middleware');
 const app = express();
 
 app.use(basicAuthMiddleware.default('test','test', {hostsWhitelist: ['localhost:3000']}));
