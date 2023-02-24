@@ -13,9 +13,7 @@ module.exports = function basicAuthMiddleware(username: string, password: string
     const auth = getSpecificHostAuth(host, options) || { username, password }
 
     const b64auth = (req.headers.authorization || '').split(' ')[1] || ''
-    const [enteredUsername, enteredPassword] = Buffer.from(b64auth, 'base64')
-      .toString()
-      .split(':')
+    const [enteredUsername, enteredPassword] = Buffer.from(b64auth, 'base64').toString().split(':')
 
     if (
       !enteredUsername ||

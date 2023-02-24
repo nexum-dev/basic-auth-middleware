@@ -63,7 +63,7 @@ export function isAuthNeeded(req: Request, options?: IOptions): boolean {
   const ipAddress = req.headers['x-forwarded-for'] || req.connection.remoteAddress
   const host = req.get('host')
 
-  if (!ipAddress || !host) {
+  if (!(ipAddress && host)) {
     return true
   }
 
@@ -75,7 +75,7 @@ export function isAuthNeeded(req: Request, options?: IOptions): boolean {
 }
 
 export function getSpecificHostAuth(host?: string, options?: IOptions): IAuth | null {
-  if (!options || !options.specificHostAuth || !host) {
+  if (!(options?.specificHostAuth && host)) {
     return null
   }
 
